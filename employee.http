@@ -1,0 +1,30 @@
+GET  http://localhost:3000/employees
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijg3NGIyM2ExLTI4ZmQtNGFjNi1hN2UxLWNhYjQzYjZjNDI2OSIsInJvbGUiOiJBRE1JTiIsIm5hbWUiOiJTaWRoYXJ0IiwiZW1haWwiOiJzaWRAZ21haWwuY29tIiwiaWF0IjoxNzIwMzM0NDk3LCJleHAiOjE3MjAzMzgwOTd9.ZiLgVi9k3NPB-_75ZvovmHsbQl3A-n_wa1YN1piIbG4
+
+POST  http://localhost:3000/employees
+content-type: application/json
+
+{
+    "name": "Sidhart",
+    "email": "sid@gmail.com",
+    "role": "ADMIN",
+    "password": "123",
+    "refreshToken": "refreshToken"
+}
+
+PATCH  http://localhost:3000/employees/2
+content-type: application/json
+
+{
+    "name": "Sidharth",
+    "email": "sid@gmail.com",
+    "role": "ADMIN"
+}
+
+POST  http://localhost:3000/auth/login
+content-type: application/json
+
+{
+    "username": "sid@gmail.com",
+    "password": "123"
+}
